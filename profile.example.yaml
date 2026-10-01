@@ -22,7 +22,7 @@ code_url: code.example.com/alex     # where the project repositories live, optio
 education:
   degree: B.Sc. Computer Science
   school: Example University of Applied Sciences
-  status: third semester (2025 to 2028)
+  status: fifth semester (2024 to 2027)
 
 languages:                          # level text drives the CV's proficiency dots (A1 to C2, native, fluent)
   English: C1, fluent
@@ -324,7 +324,7 @@ cv:
     - allowed to work in Germany
     - based in Berlin
     - up to 20 hours per week
-  education_line: Third semester, graduating in 2028
+  education_line: Fifth semester, graduating in 2027
   featured_projects: 2        # full write-up; the rest go under more_heading with their short line
   projects_heading: Projects
   more_heading: Also built

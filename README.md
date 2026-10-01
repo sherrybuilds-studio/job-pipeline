@@ -1,5 +1,7 @@
 # job-pipeline
 
+[![CI](https://github.com/sherrybuilds-studio/job-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/sherrybuilds-studio/job-pipeline/actions/workflows/ci.yml)
+
 Finds working-student roles, drops the ones the candidate cannot honestly apply to, and prepares a one-page CV and a cover letter that an independent reviewer pass must clear with zero unsupported claims.
 
 This is a cleaned, profile-driven port of the job pipeline its author runs privately. Everything personal lives in one YAML file that is not committed; the repository ships a made-up candidate, Alex Example, so it runs and tests out of the box.
@@ -81,7 +83,7 @@ KITS  python -m pipeline kit build data/sourcing/<date>.json
 Requires Python 3.11 or newer.
 
 ```bash
-git clone <this repository's URL> job-pipeline
+git clone https://github.com/sherrybuilds-studio/job-pipeline.git
 cd job-pipeline
 python3 -m venv .venv
 source .venv/bin/activate
