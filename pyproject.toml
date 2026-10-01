@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "job-pipeline"
+version = "2.0.0"
+description = "Finds working-student roles, drops the ones the candidate cannot honestly apply to, and prepares reviewed applications."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.60",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "reportlab>=4.1",
+    "supabase>=2.4",
+]
+
+[project.optional-dependencies]
+# Firecrawl reads job boards that have no public API (berlinstartupjobs, Indeed).
+firecrawl = ["firecrawl-py>=4.0"]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+job-pipeline = "pipeline.__main__:main"
+
+[tool.setuptools]
+packages = ["pipeline"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["pipeline"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

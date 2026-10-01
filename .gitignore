@@ -1,2 +1,20 @@
+# personal data: your profile, your secrets, everything the pipeline writes
+profile.yaml
 .env
+.env.*
+!.env.example
+/data/
+/output/
+data/applications/
+*.pdf
+
+# Python
 __pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,382 @@
+# profile.example.yaml
+#
+# A made-up candidate, so the pipeline and its tests run out of the box.
+# Copy this file to profile.yaml (git-ignored) and replace every value with
+# your own. Everything the pipeline says about the candidate comes from this
+# file: the CV, the letters and their closing lines, the honesty gate, the hard
+# bars, the matcher's weights and the search queries. The code holds no
+# personal data.
+#
+# Rule of thumb: only write a number here if you can show where it came from.
+# The writer may cite nothing else, and the reviewer flags any number in a
+# letter that is not in this file or in the posting.
+
+name: Alex Example
+first_name: Alex                    # signs follow-up e-mails
+email: alex@example.com
+phone: "+49 30 0000 0000"           # optional, "" hides it
+location: Berlin, Germany
+website: alex.example.com           # optional
+code_url: code.example.com/alex     # where the project repositories live, optional
+
+education:
+  degree: B.Sc. Computer Science
+  school: Example University of Applied Sciences
+  status: third semester (2025 to 2028)
+
+languages:                          # level text drives the CV's proficiency dots (A1 to C2, native, fluent)
+  English: C1, fluent
+  German: B1, learning
+
+availability: based in Berlin · up to 20 hours per week · can start immediately · on site or remote
+work_authorization: allowed to work in Germany, no sponsorship needed
+
+# Extra facts the writer and the reviewer may rely on, one per line.
+facts:
+  - Works as a teaching assistant for weekly Python exercise sessions alongside the degree
+  - German is B1, so roles that require German at C1 or above are out of reach
+
+# ── what to look for ─────────────────────────────────────────────────────────
+search:
+  city: Berlin
+  country: Germany
+  country_terms: [germany, deutschland]
+  # Employment types a posting must offer: werkstudent, internship.
+  role_types: [werkstudent]
+  target_roles:
+    - Werkstudent Software Engineering
+    - Working Student Python
+    - Working Student Data Engineering
+    - Working Student AI
+  # Title fragments that earn a small bonus in the daily score.
+  target_titles:
+    - python developer
+    - python entwickler
+    - python engineer
+    - backend developer
+    - backend engineer
+    - backend entwickler
+    - software developer
+    - software engineer
+    - softwareentwickler
+    - data engineer
+    - ai engineer
+    - ml engineer
+    - automation engineer
+  target_companies: Small and mid-sized tech companies in Berlin or remote in Germany with an English-speaking team.
+  # Remote postings are kept only when their location restriction names one of these.
+  remote_regions: [germany, europe, european union, emea, worldwide, anywhere, austria, netherlands]
+  adzuna_country: de
+  queries:
+    adzuna_primary: [Werkstudent Python, Working Student Python, Werkstudent Data, Working Student AI]
+    adzuna_secondary: [Werkstudent Softwareentwicklung, Working Student Backend, Working Student Data Engineering]
+    adzuna_fallback: [Python Developer]
+    arbeitnow_daily: [werkstudent python, working student python, werkstudent data]
+    arbeitnow:
+      - werkstudent
+      - working student
+      - werkstudent python
+      - working student data engineer
+      - werkstudent ki
+      - working student backend
+      - werkstudent devops
+      - working student analytics
+      - working student internal tools
+      - werkstudent automatisierung
+    bundesagentur: [Werkstudent Informatik, Werkstudent Softwareentwicklung, Werkstudent Python]
+    linkedin:
+      - Werkstudent Python
+      - Working Student Data Engineering
+      - Working Student AI
+      - Werkstudent Backend
+      - Working Student Data Analyst
+      - Werkstudent DevOps
+      - Working Student Internal Tools
+      - Working Student Automation
+    xing:
+      - werkstudent python
+      - werkstudent data engineering
+      - werkstudent ki
+      - werkstudent backend
+      - werkstudent datenanalyse
+      - werkstudent devops
+      - werkstudent interne tools
+      - werkstudent automatisierung
+    indeed: [werkstudent python, werkstudent data engineering, werkstudent devops]
+  # Pages read through Firecrawl (needs FIRECRAWL_API_KEY); leave empty to skip.
+  firecrawl_pages:
+    - url: https://berlinstartupjobs.com/skill-areas/working-student/
+      source: berlinstartupjobs
+
+# ── disqualifiers, checked before anything is scored ─────────────────────────
+# A posting that REQUIRES one of these is dropped and the reason is logged.
+# A stated preference ("C1 von Vorteil") is not a bar.
+hard_bars:
+  german_c1: true          # German at C1 or above required
+  masters_degree: true     # a running or finished master's degree required
+  completed_degree: true   # any finished degree required (you are still studying)
+
+# ── skills ───────────────────────────────────────────────────────────────────
+# Skill name → where it was used. Only these can appear on the CV.
+core_skills:
+  Python: Main language of every project below
+  FastAPI: HTTP API of the course assistant
+  SQL: PostgreSQL schema and queries of the price tracker
+  pandas: Cleans and reshapes the scraped prices before they are stored
+  Docker: The course assistant and its vector store run in Docker Compose
+  Linux: The price tracker runs under cron on a small Linux server
+  Git: Every project lives in Git, with pull requests reviewed by a study partner
+  GitHub Actions: The study bot's tests run in CI on every push
+  LLM APIs: The course assistant calls a hosted language model over its HTTP API
+  RAG: Retrieval over lecture notes with embeddings and a vector store
+  ChromaDB: Vector store of the course assistant
+  Playwright: Browser automation for the shops the price tracker reads
+  Telegram Bot API: The study bot and the price tracker's alerts
+
+# Never claimed. The lint flags any of these in a letter unless it is named as a gap.
+not_my_skills: [Java, C++, Go, Rust, Scala, Kubernetes, Terraform, PyTorch, TensorFlow, fine-tuning, iOS, Android, R, Matlab]
+
+# Tool names found in postings → the core skill they count as on a tailored CV.
+skill_aliases:
+  PostgreSQL: SQL
+  Supabase: SQL
+  LLM: LLM APIs
+  OpenAI: LLM APIs
+  Claude: LLM APIs
+  Vector DB: RAG
+  CI/CD: GitHub Actions
+  Telegram: Telegram Bot API
+  REST: FastAPI
+  Webhooks: FastAPI
+
+# ── projects ─────────────────────────────────────────────────────────────────
+# key: short label used in sourcing reports ("maps to").
+# match: patterns (regular expressions, case-insensitive) that tie a posting
+#   to this project; one strong hit or two supporting hits make a match.
+# cv: the words on the CV (no slashes, no em dashes); falls back to the description.
+projects:
+  - name: Course Q&A Assistant
+    key: course assistant
+    description: >-
+      Answers questions about lecture notes with retrieval over ChromaDB behind a FastAPI service;
+      every answer cites the slide it came from. 34 of 40 questions of a fixed test set answered
+      correctly (eval run 2026-05-14).
+    stack: [Python, FastAPI, ChromaDB, LLM APIs, Docker]
+    evidence: 34 of 40 test questions correct (2026-05-14)
+    status: Demo on request
+    repo: course-assistant
+    cv:
+      badge: 34 of 40 test questions correct
+      short: Answers questions about lecture notes with a language model, RAG over ChromaDB and a FastAPI service in Docker.
+      text: >-
+        Answers questions about lecture notes. Retrieval (RAG) over ChromaDB finds the relevant slides,
+        a FastAPI service passes them to a language model through its API, and every answer cites the
+        slide it came from. It runs in Docker Compose. A fixed test set of 40 questions checks every
+        change; 34 are answered correctly.
+    match:
+      strong:
+        - '\brag\b'
+        - 'retrieval'
+        - 'vector ?(?:database|db|store|search)'
+        - 'vektordatenbank'
+        - 'embeddings?'
+        - 'semantic search'
+        - 'chromadb|qdrant|pinecone|weaviate|pgvector'
+        - 'langchain|llamaindex'
+        - 'knowledge ?base|wissensdatenbank'
+        - 'llm[- ]?(?:apps?|anwendung\w*|based|powered|apis?)'
+        - 'prompt[- ]engineering'
+        - 'question answering'
+      supporting: ['\bgpt', 'openai', '\bclaude\b', 'generative ai', 'generativ', 'genai', '\bllms?\b', 'fastapi']
+
+  - name: Price Tracker Pipeline
+    key: price tracker
+    description: >-
+      Scrapes 120 product pages every morning with Playwright, cleans the prices with pandas, stores
+      them in PostgreSQL and sends a Telegram alert when a price drops. Runs under cron on a small
+      Linux server.
+    stack: [Python, Playwright, pandas, PostgreSQL, Telegram Bot API, Linux]
+    evidence: 120 product pages checked every morning
+    status: Running daily
+    repo: price-tracker
+    cv:
+      badge: 120 product pages every morning
+      short: >-
+        Scrapes 120 product pages every morning with Playwright on a Linux server, cleans the prices
+        with pandas and stores them with SQL in PostgreSQL.
+      text: >-
+        Every morning a cron job on a small Linux server scrapes 120 product pages with Playwright,
+        cleans the prices with pandas and stores them in PostgreSQL with plain SQL. When a price
+        drops, a Telegram message goes out.
+    match:
+      strong:
+        - 'scrap(?:ing|er|e)'
+        - 'crawl'
+        - 'data ?pipelines?|datenpipeline'
+        - '\betl\b|\belt\b'
+        - 'data (?:ingestion|extraction|engineering|cleaning|wrangling)'
+        - 'playwright|selenium'
+      supporting: ['postgres', 'supabase', '\bpandas\b', 'parsing', 'report(?:ing)? ?automation', '\bcron\b', 'dedup']
+
+  - name: Study Group Bot
+    key: study bot
+    description: >-
+      Telegram bot that plans study sessions for a group and posts reminders; 12 automated tests run
+      in GitHub Actions on every push.
+    stack: [Python, Telegram Bot API, SQLite, GitHub Actions]
+    evidence: 12 automated tests in CI
+    status: In use by the author's study group
+    repo: study-bot
+    cv:
+      badge: 12 automated tests in CI
+      short: >-
+        Telegram bot that plans study sessions; 12 automated tests run in GitHub Actions on every push
+        to its Git repository.
+      text: >-
+        A Telegram bot that plans study sessions for a group and posts reminders. The code lives in
+        Git, and 12 automated tests run in GitHub Actions on every push.
+    match:
+      strong:
+        - 'telegram'
+        - 'chat ?bots?'
+        - 'discord bot|slack bot'
+        - 'pytest|unit tests?|test automation|testautomatisierung'
+        - 'ci/cd|github actions'
+      supporting: ['\bdocker\b', '\blinux\b', '\bgit\b', 'continuous integration', 'code review']
+
+experience:
+  - role: Teaching Assistant, Introduction to Programming
+    company: Example University of Applied Sciences
+    period: Oct 2025 to present
+    detail: Runs weekly Python exercise sessions for first-semester students.
+  - role: Barista
+    company: Café Example, Berlin
+    period: 2023 to 2025
+    detail: Part-time alongside school and the first year of the degree.
+
+# ── claims ───────────────────────────────────────────────────────────────────
+# The only numbers the writer may cite, each with where it can be checked.
+verified_claims:
+  - claim: the course assistant answers 34 of 40 questions of a fixed test set correctly
+    evidence: eval run 2026-05-14, eval results in the course-assistant repository
+  - claim: the price tracker checks 120 product pages every morning
+    evidence: cron log of the price tracker
+  - claim: the study bot has 12 automated tests that run in CI on every push
+    evidence: GitHub Actions history of the study-bot repository
+
+cover_letter_hooks:
+  - A course assistant that answers questions about lecture notes and cites the source slide; 34 of 40 test questions correct
+  - A price tracker that scrapes 120 product pages every morning and alerts over Telegram
+  - Teaching weekly Python exercise sessions means explaining code to people every week
+
+# Words that tie a skill claim in a letter to something real (lint rule 3).
+# Project names, project keys, roles, employers and the school count automatically.
+evidence_anchors:
+  - lecture notes
+  - product pages
+  - exercise sessions
+  - test set
+  - 34 of 40
+  - 120 product
+  - 12 automated tests
+
+# The honesty gate: regular expressions (case-insensitive) that may never
+# appear in the profile, the CV or a finished letter. The regex gate runs last,
+# after every model has had its say.
+honesty:
+  banned:
+    - pattern: '\bclients?\b'
+      reason: the word client (no project was paid work)
+    - pattern: 'full-time'
+      reason: contradicts the availability of up to 20 hours per week
+    - pattern: '\buptime\b|\b24/7\b'
+      reason: no uptime was ever measured
+    - pattern: '\b10x\b'
+      reason: unmeasured multiplier
+    - pattern: '\b95\s?%'
+      reason: an early accuracy estimate that was never measured
+  # Only meaningful in finished letters and PDFs, not in the sources.
+  letter_only:
+    - pattern: 'alex\.old@example\.com'
+      reason: old e-mail address
+
+# ── letters ──────────────────────────────────────────────────────────────────
+letters:
+  persona: a computer science student in Berlin applying for working-student roles in software, data and AI
+  # Every daily-run letter carries this sentence verbatim.
+  availability_sentence: I'm based in Berlin and available up to 20 hours per week.
+  # Kit letters end with this paragraph (no slash: a kit with a slash is blocked).
+  closing: >-
+    I'm based in Berlin and available up to 20 hours per week. My CV is attached, and you can see
+    the projects at alex.example.com.
+  sign_off: "Kind regards,\nAlex Example"
+  # Extra hard rules for the writer, in your own words.
+  rules:
+    - Never call anyone a client or a customer; every project was built for study or for myself.
+    - Never write "full-time"; the availability is up to 20 hours per week.
+
+# ── CV ───────────────────────────────────────────────────────────────────────
+cv:
+  headline: Computer science student in Berlin. I build small Python services and data pipelines and keep them tested.
+  # Drawn as a card in the sidebar; the first line is bold.
+  availability_lines:
+    - Working student (Werkstudent)
+    - allowed to work in Germany
+    - based in Berlin
+    - up to 20 hours per week
+  education_line: Third semester, graduating in 2028
+  featured_projects: 2        # full write-up; the rest go under more_heading with their short line
+  projects_heading: Projects
+  more_heading: Also built
+  skill_groups:
+    - label: Languages and frameworks
+      skills: [Python, FastAPI, SQL, pandas]
+    - label: AI and data
+      skills: [LLM APIs, RAG, ChromaDB]
+    - label: Tools and infrastructure
+      skills: [Docker, Linux, Git, GitHub Actions, Playwright, Telegram Bot API]
+  skill_labels:               # skill name → chip text, when the chip should read differently
+    LLM APIs: Language model APIs
+  language_levels: {}         # level text → text shown on the CV
+
+# ── daily score ──────────────────────────────────────────────────────────────
+# Keyword matching is a lower-case substring test on " title description ".
+scoring:
+  # A posting must touch at least this many of the groups below.
+  min_core_groups: 2
+  core_groups:
+    - [llm, openai, claude, 'ai agent', 'language model', gpt, 'large language', ' ki ', 'künstliche intelligenz', ' machine learning', ' ml ', ' ai', 'artificial intelligence', 'deep learning', nlp]
+    - [python, 'software engineer', 'software development', softwareentwickl, backend, full-stack, fullstack, developer, entwickler, engineer]
+    - [fastapi, flask, 'api ', 'rest api', automation, workflow, rag, vector, embedding, retrieval, docker, linux, devops, 'ci/cd', 'github actions', 'data pipeline', etl, scraping]
+    - ['data engineer', 'data analy', analytics, pandas, dashboard, 'internal tool', 'telegram bot', chatbot, ' sql ', postgres]
+  skill_weights:
+    - label: Python
+      weight: 20
+      keywords: [python]
+    - label: LLM and AI
+      weight: 15
+      keywords: [llm, openai, claude, 'ai agent', 'language model', gpt, 'large language', ' ki ', 'künstliche intelligenz', ' machine learning', ' ml ', ' ai ', 'artificial intelligence', 'deep learning']
+    - label: RAG and vectors
+      weight: 10
+      keywords: [rag, vector, chromadb, embedding, 'retrieval augmented']
+    - label: APIs
+      weight: 10
+      keywords: [fastapi, flask, ' api ', 'rest api', 'api development']
+    - label: Data pipelines
+      weight: 15
+      keywords: [etl, 'data pipeline', scraping, scraper, crawl, pandas, 'data engineer']
+    - label: SQL and databases
+      weight: 10
+      keywords: [' sql ', postgres, mysql, database, supabase]
+    - label: Docker and Linux
+      weight: 10
+      keywords: [docker, linux, devops, 'cloud deployment']
+    - label: CI and testing
+      weight: 5
+      keywords: ['ci/cd', cicd, 'github actions', 'gitlab ci', 'continuous integration', pytest]
+    - label: Automation
+      weight: 5
+      keywords: [automation, workflow, playwright, selenium]
+  english_bonus: 10     # listing written in English
+  location_bonus: 10    # in the search city (remote in the country earns 6, remote abroad 3)
+  role_bonus: 10        # working-student or intern title (junior 8, target title 5)
