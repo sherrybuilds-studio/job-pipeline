@@ -1,0 +1,73 @@
+{
+ "jobs": [
+  {
+   "absolute_url": "https://northwind-bank.example/careers/positions/1000001?gh_jid=1000001",
+   "internal_job_id": 2000001,
+   "location": {
+    "name": "Berlin"
+   },
+   "id": 1000001,
+   "updated_at": "2026-08-27T07:34:54-04:00",
+   "requisition_id": "R0001",
+   "title": "Agile Coach",
+   "company_name": "Northwind Bank",
+   "first_published": "2026-03-16T08:09:55-04:00",
+   "language": "en",
+   "application_deadline": null,
+   "content": "&lt;h2&gt;&lt;strong&gt;About the opportunity&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We are looking for a Senior Agile Coach to work with our product and technology teams. You will coach teams and leaders, frame challenges for product &amp;amp; technology, and help the organization improve how it plans and delivers.&lt;/p&gt; &lt;p&gt;This role can be based in Berlin or remote in Germany.&lt;/p&gt; &lt;h2&gt;&lt;strong&gt;In this role, you will:&lt;/strong&gt;&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;Put people first and value conversation over process.&lt;/li&gt; &lt;li&gt;Work through ambiguity with the teams you coach.&lt;/li&gt; &lt;li&gt;Share what works across teams, ",
+   "departments": [
+    {
+     "id": 300001,
+     "name": "Product - Agile Solutions",
+     "child_ids": [],
+     "parent_id": 300000
+    }
+   ],
+   "offices": [
+    {
+     "id": 400001,
+     "name": "Berlin",
+     "location": "Berlin, Berlin, Germany",
+     "child_ids": [],
+     "parent_id": null
+    }
+   ]
+  },
+  {
+   "absolute_url": "https://northwind-bank.example/careers/positions/1000002?gh_jid=1000002",
+   "internal_job_id": 2000002,
+   "location": {
+    "name": "Madrid"
+   },
+   "id": 1000002,
+   "updated_at": "2026-09-16T16:04:08-04:00",
+   "requisition_id": "R0002",
+   "title": "Financial Crime Analyst – Italian market",
+   "company_name": "Northwind Bank",
+   "first_published": "2026-09-15T02:31:10-04:00",
+   "language": "en",
+   "application_deadline": null,
+   "content": "&lt;h1&gt;&lt;strong&gt;About the opportunity&lt;/strong&gt;&lt;/h1&gt; &lt;p&gt;We are looking for a Financial Crime Analyst (Italian fluent) to join our operations team and keep the bank compliant with anti-money-laundering rules.&lt;/p&gt; &lt;h2&gt;&lt;strong&gt;In this role, you will:&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Review escalated cases, detect suspicious patterns and answer requests from authorities.&amp;nbsp;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Review and improve investigations of complex cases.&lt;/li&gt; &lt;li&gt;Ensuring qual",
+   "departments": [
+    {
+     "id": 300002,
+     "name": "Operations",
+     "child_ids": [],
+     "parent_id": null
+    }
+   ],
+   "offices": [
+    {
+     "id": 400002,
+     "name": "Madrid",
+     "location": "Madrid, Madrid, Spain",
+     "child_ids": [],
+     "parent_id": null
+    }
+   ]
+  }
+ ],
+ "meta": {
+  "total": 2
+ }
+}

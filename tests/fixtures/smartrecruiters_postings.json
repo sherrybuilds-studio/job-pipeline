@@ -1,0 +1,134 @@
+{
+ "offset": 0,
+ "limit": 100,
+ "totalFound": 2,
+ "content": [
+  {
+   "id": "700000000000001",
+   "name": "Senior Compliance Manager (Legal and Privacy) (f/m/x)",
+   "uuid": "00000000-0000-4000-8000-000000000301",
+   "jobAdId": "00000000-0000-4000-8000-000000000302",
+   "defaultJobAd": true,
+   "refNumber": "REF001",
+   "company": {
+    "identifier": "ParcelForward",
+    "name": "Parcel Forward"
+   },
+   "releasedDate": "2026-09-02T14:06:50.158Z",
+   "location": {
+    "city": "Berlin",
+    "region": "BE",
+    "country": "de",
+    "remote": false,
+    "hybrid": true,
+    "hybridDescription": "40% office attendance is required.",
+    "latitude": "52.52",
+    "longitude": "13.40",
+    "fullLocation": "Berlin, BE, Germany"
+   },
+   "industry": {
+    "id": "logistics_and_supply_chain",
+    "label": "Logistics And Supply Chain"
+   },
+   "department": {
+    "id": "1000",
+    "label": "Finance & Administration"
+   },
+   "function": {
+    "id": "legal",
+    "label": "Legal"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "associate",
+    "label": "Associate"
+   },
+   "customField": [
+    {
+     "fieldId": "field-seniority",
+     "fieldLabel": "Seniority",
+     "valueId": "value-senior",
+     "valueLabel": "Senior"
+    },
+    {
+     "fieldId": "COUNTRY",
+     "fieldLabel": "Country/Region",
+     "valueId": "de",
+     "valueLabel": "Germany"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/ParcelForward/postings/700000000000001",
+   "creator": {
+    "name": "Recruiting Team"
+   },
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "700000000000002",
+   "name": "Junior Logistics Operations (w/m/d)",
+   "uuid": "00000000-0000-4000-8000-000000000303",
+   "jobAdId": "00000000-0000-4000-8000-000000000304",
+   "defaultJobAd": false,
+   "refNumber": "REF002",
+   "company": {
+    "identifier": "ParcelForward",
+    "name": "Parcel Forward"
+   },
+   "releasedDate": "2026-08-28T16:20:37.135Z",
+   "location": {
+    "city": "Berlin",
+    "region": "BE",
+    "country": "de",
+    "remote": false,
+    "hybrid": true,
+    "hybridDescription": "Eine Anwesenheit im Büro von 40 % ist erforderlich",
+    "latitude": "52.52",
+    "longitude": "13.40",
+    "fullLocation": "Berlin, BE, Germany"
+   },
+   "industry": {
+    "id": "logistics_and_supply_chain",
+    "label": "Logistics And Supply Chain"
+   },
+   "department": {
+    "id": "2000",
+    "label": "Logistics Operations"
+   },
+   "function": {
+    "id": "customer_service",
+    "label": "Customer Service"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "entry_level",
+    "label": "Entry Level"
+   },
+   "customField": [
+    {
+     "fieldId": "field-seniority",
+     "fieldLabel": "Seniority",
+     "valueId": "value-junior",
+     "valueLabel": "Junior"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/ParcelForward/postings/700000000000002",
+   "language": {
+    "code": "de",
+    "label": "German",
+    "labelNative": "Deutsch"
+   }
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workzag-jobs>
+
+<position>
+    <id>3000001</id>
+    <subcompany>Mobility Lab GmbH</subcompany>
+    <office>Berlin Mitte</office>
+    <department>Mobilitätstechnologien</department>
+    <recruitingCategory>Werkstudenten</recruitingCategory>
+    <name>Werkstudent*in Energiedaten &amp; Analyse</name>
+    <jobDescriptions>
+        <jobDescription>
+            <name>Aufgaben</name>
+            <value>
+                Deine Aufgaben:&lt;br&gt;&lt;ul&gt;&lt;li&gt;Du unterstützt das Fachteam bei Themen rund um Wasserstoff und E-Fuels.&lt;/li&gt;&lt;li&gt;Du bereitest Daten und Studien zielgruppengerecht auf.&lt;/li&gt;&lt;li&gt;Du hilfst bei der Vorbereitung von Workshops und Berichten.&lt;/li&gt;&lt;/ul&gt;</value>
+        </jobDescription>
+        <jobDescription>
+            <name>Profil</name>
+            <value>
+                Bitte bewirb dich auch, wenn nicht alle Punkte zu 100% auf dich zutreffen.&lt;br&gt;&lt;ul&gt;&lt;li&gt;Du studierst Energieökonomie, Ingenieurswissenschaften oder einen verwandten Fachbereich.&lt;/li&gt;&lt;li&gt;Du hast hervorragende Deutschkenntnisse (Muttersprache oder C1).&lt;/li&gt;&lt;/ul&gt;</value>
+        </jobDescription>
+        <jobDescription>
+            <name>Wir bieten</name>
+            <value>
+                Flexible Arbeitszeiten neben dem Studium, ein offenes Team und flache Hierarchien.</value>
+        </jobDescription>
+    </jobDescriptions>
+    <employmentType>working_student</employmentType>
+    <seniority>entry-level</seniority>
+    <schedule>part-time</schedule>
+    <occupation>other</occupation>
+    <occupationCategory>other</occupationCategory>
+    <createdAt>2026-09-09T15:15:06+00:00</createdAt>
+</position>
+
+<position>
+    <id>3000002</id>
+    <subcompany>Mobility Lab GmbH</subcompany>
+    <office>Berlin Mitte</office>
+    <department>Monitoring und Analyse</department>
+    <recruitingCategory>Werkstudenten</recruitingCategory>
+    <name>Werkstudent*in Projektkoordination</name>
+    <jobDescriptions>
+        <jobDescription>
+            <name>Aufgaben</name>
+            <value>
+                Du gehörst dem Team Monitoring &amp;amp; Analyse an:&lt;br&gt;&lt;ul&gt;&lt;li&gt;Du unterstützt bei der Koordination von Forschungsstudien.&lt;/li&gt;&lt;li&gt;Du wertest Befragungen aus.&lt;/li&gt;&lt;/ul&gt;</value>
+        </jobDescription>
+        <jobDescription>
+            <name>Profil</name>
+            <value>
+                &lt;ul&gt;&lt;li&gt;Du bist Student*in der Sozial-, Ingenieurs- oder Wirtschaftswissenschaften.&lt;/li&gt;&lt;li&gt;Du kennst dich mit statistischer Auswertung aus.&lt;/li&gt;&lt;/ul&gt;</value>
+        </jobDescription>
+    </jobDescriptions>
+    <employmentType>working_student</employmentType>
+    <seniority>entry-level</seniority>
+    <schedule>part-time</schedule>
+    <occupation>other</occupation>
+    <occupationCategory>other</occupationCategory>
+    <createdAt>2026-09-11T14:05:53+00:00</createdAt>
+</position>
+
+</workzag-jobs>

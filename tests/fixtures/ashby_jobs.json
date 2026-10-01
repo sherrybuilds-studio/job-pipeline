@@ -1,0 +1,69 @@
+{
+ "jobs": [
+  {
+   "id": "00000000-0000-4000-8000-000000000101",
+   "title": "Intern Quantitative Investment Analyst (f/m/d) ",
+   "department": "Investment",
+   "team": "Investment",
+   "employmentType": "Intern",
+   "location": "Berlin",
+   "secondaryLocations": [],
+   "publishedAt": "2026-09-16T14:20:09.555+00:00",
+   "isListed": true,
+   "isRemote": false,
+   "workplaceType": "OnSite",
+   "address": {
+    "postalAddress": {
+     "postalCode": "10115",
+     "addressRegion": "Berlin",
+     "streetAddress": "Example Street 1",
+     "addressCountry": "Germany",
+     "addressLocality": "Berlin"
+    }
+   },
+   "jobUrl": "https://jobs.ashbyhq.com/acme-invest/00000000-0000-4000-8000-000000000101",
+   "applyUrl": "https://jobs.ashbyhq.com/acme-invest/00000000-0000-4000-8000-000000000101/application",
+   "descriptionHtml": "<p style=\"min-height:1.5em\">As an Intern Quantitative Investment Analyst (f/m/d), you support our investment team in building and running our investment strategies across public and private markets. The position starts in October 2026 and the internship lasts at least four months.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What will you actually be doing?</strong></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Allocation models:</strong> You backtest model changes in Python, evaluate new signals and prepare analyses for investment decisions.<",
+   "descriptionPlain": "As an Intern Quantitative Investment Analyst (f/m/d), you support our investment team in building and running our investment strategies across public and private markets. The position starts in October 2026 and the internship lasts at least four months.\n\n \n\nWhat will you actually be doing?\n\n - Allocation models: You backtest model changes in Python, evaluate new signals and prepare analyses for investment decisions.\n\n - Fund selection: You help screen and monitor funds and ETFs, including peer-group comparisons and risk analyses."
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000102",
+   "title": "Senior Relationship Manager Investments (m/w/d)",
+   "department": "Clients",
+   "team": "Relationship Management",
+   "employmentType": "FullTime",
+   "location": "Berlin",
+   "secondaryLocations": [
+    {
+     "location": "München",
+     "address": {
+      "postalAddress": {
+       "postalCode": "80331",
+       "addressRegion": "Bavaria",
+       "streetAddress": "Example Square 2",
+       "addressCountry": "Germany",
+       "addressLocality": "Munich"
+      }
+     }
+    }
+   ],
+   "publishedAt": "2026-06-18T14:07:50.930+00:00",
+   "isListed": true,
+   "isRemote": true,
+   "workplaceType": "Hybrid",
+   "address": {
+    "postalAddress": {
+     "postalCode": "10115",
+     "addressRegion": "Berlin",
+     "streetAddress": "Example Street 1",
+     "addressCountry": "Germany",
+     "addressLocality": "Berlin"
+    }
+   },
+   "jobUrl": "https://jobs.ashbyhq.com/acme-invest/00000000-0000-4000-8000-000000000102",
+   "applyUrl": "https://jobs.ashbyhq.com/acme-invest/00000000-0000-4000-8000-000000000102/application",
+   "descriptionHtml": "<h1><strong>Deine Rolle</strong></h1><p style=\"min-height:1.5em\">Als <strong>Senior Relationship Manager Investments (m/w/d) </strong>betreust du unsere Kund:innen im gehobenen Privatkundensegment und bist ihr erster Ansprechpartner bei allen Fragen zur Vermögensverwaltung.<br /><br /></p><h1><strong>Was machst du dabei konkret?</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Kundenbeziehungen:</strong> Du pflegst deinen eigenen Kundenstamm.</p></li></ul>",
+   "descriptionPlain": "DEINE ROLLE\n\nAls Senior Relationship Manager Investments (m/w/d) betreust du unsere Kund:innen im gehobenen Privatkundensegment und bist ihr erster Ansprechpartner bei allen Fragen zur Vermögensverwaltung.\n\n\n\n\nWAS MACHST DU DABEI KONKRET?\n\n - Kundenbeziehungen: Du pflegst deinen eigenen Kundenstamm."
+  }
+ ]
+}

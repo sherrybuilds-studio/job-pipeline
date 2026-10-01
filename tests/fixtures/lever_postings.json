@@ -1,0 +1,23 @@
+[
+ {
+  "additionalPlain": "The interview process\nWe start with a short call with an engineering manager to align on the details.\nThen comes a longer technical conversation about your professional e",
+  "categories": {
+   "commitment": "Full-time",
+   "location": "Berlin",
+   "team": "Engineering",
+   "allLocations": [
+    "Berlin"
+   ]
+  },
+  "createdAt": 1785156639839,
+  "descriptionPlain": "Paperstack builds tools that help research groups share and discuss their papers. We are a small product team in Berlin and ship to thousands of labs.\nWe are looking for a senior frontend engineer who enjoys working closely with design and research.\n",
+  "id": "00000000-0000-4000-8000-000000000201",
+  "text": "Senior Frontend Engineer - React",
+  "country": "DE",
+  "workplaceType": "hybrid",
+  "openingPlain": "",
+  "descriptionBodyPlain": "Paperstack builds tools that help research groups share and discuss their papers.",
+  "hostedUrl": "https://jobs.lever.co/paperstack/00000000-0000-4000-8000-000000000201",
+  "applyUrl": "https://jobs.lever.co/paperstack/00000000-0000-4000-8000-000000000201/apply"
+ }
+]

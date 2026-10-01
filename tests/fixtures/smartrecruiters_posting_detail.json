@@ -1,0 +1,89 @@
+{
+ "id": "700000000000001",
+ "name": "Senior Compliance Manager (Legal and Privacy) (f/m/x)",
+ "uuid": "00000000-0000-4000-8000-000000000301",
+ "jobId": "00000000-0000-4000-8000-000000000305",
+ "jobAdId": "00000000-0000-4000-8000-000000000302",
+ "defaultJobAd": true,
+ "refNumber": "REF001",
+ "company": {
+  "name": "Parcel Forward",
+  "identifier": "ParcelForward"
+ },
+ "location": {
+  "city": "Berlin",
+  "region": "BE",
+  "country": "de",
+  "remote": false,
+  "hybrid": true,
+  "hybridDescription": "40% office attendance is required.",
+  "latitude": "52.52",
+  "longitude": "13.40",
+  "fullLocation": "Berlin, BE, Germany"
+ },
+ "customField": [
+  {
+   "fieldId": "field-seniority",
+   "fieldLabel": "Seniority",
+   "valueId": "value-senior",
+   "valueLabel": "Senior"
+  }
+ ],
+ "releasedDate": "2026-09-02T14:06:50.158Z",
+ "creator": {
+  "name": "Recruiting Team"
+ },
+ "postingUrl": "https://jobs.smartrecruiters.com/ParcelForward/700000000000001-senior-compliance-manager",
+ "applyUrl": "https://jobs.smartrecruiters.com/ParcelForward/700000000000001-senior-compliance-manager?oga=true",
+ "jobAd": {
+  "sections": {
+   "companyDescription": {
+    "title": "Company Description",
+    "text": "<p>Parcel Forward makes cross-border shipping simple for online shops.</p><p>We connect shops with local carriers across Europe so parcels move from warehouse to doorstep at the right speed and cost.</p>"
+   },
+   "jobDescription": {
+    "title": "Job Description",
+    "text": "<p>We are growing, and so is the regulatory and contractual work that comes with a cross-border logistics platform. We are looking for a senior generalist to own legal, compliance, data protection and AI governance topics.&#xa0;</p><p>This is a hands-on individual contributor role: contract review, GDPR questions and compliance training.</p>"
+   },
+   "qualifications": {
+    "title": "Qualifications",
+    "text": "<p><strong>This is what you need to succeed:</strong></p><ul><li>Experience in compliance, privacy or contract negotiation; a law degree is a plus&#xa0;</li><li>5+ years in a generalist legal, compliance or privacy role&#xa0;</li><li>Fluent German and English&#xa0;</li></ul>"
+   },
+   "additionalInformation": {
+    "title": "Additional Information",
+    "text": "<p><strong>What we offer:</strong></p><p><strong>Flexible and hybrid work:&#xa0;</strong>an office in Berlin, flexible remote set-up and working hours.</p>"
+   },
+   "videos": {
+    "title": "Videos To Watch",
+    "urls": []
+   }
+  }
+ },
+ "active": true,
+ "visibility": "PUBLIC",
+ "industry": {
+  "id": "logistics_and_supply_chain",
+  "label": "Logistics And Supply Chain"
+ },
+ "function": {
+  "id": "legal",
+  "label": "Legal"
+ },
+ "department": {
+  "id": 1000,
+  "label": "Finance & Administration"
+ },
+ "experienceLevel": {
+  "id": "associate",
+  "label": "Associate"
+ },
+ "typeOfEmployment": {
+  "id": "permanent",
+  "label": "Full-time"
+ },
+ "language": {
+  "code": "en",
+  "label": "English",
+  "labelNative": "English (US)"
+ }
+}

@@ -1,0 +1,9 @@
+# Board list for scripts/seed_ats_boards.py: one board per line, ats,slug,Company Name.
+# The slug is the company's part of its public board URL, for example
+#   boards.greenhouse.io/<slug>   jobs.ashbyhq.com/<slug>   jobs.lever.co/<slug>
+#   <slug>.jobs.personio.de       jobs.smartrecruiters.com/<slug>   join.com/companies/<slug>
+# Copy this file, replace the placeholder lines below with real boards, then run
+#   python scripts/seed_ats_boards.py your_boards.csv --dry-run
+greenhouse,example-company,Example Company
+ashby,example-startup,Example Startup
+personio,example-gmbh,Example GmbH
